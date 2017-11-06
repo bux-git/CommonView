@@ -22,7 +22,7 @@ import java.util.ArrayList;
  * 2.监听Activity dispatchTouchEvent 隐藏软键盘
  * 3.设置getViewTreeObserver().addOnGlobalLayoutListener 监听布局变化 根据已经选择项底部坐标
  * 和 输入框顶部坐标差值 滑动RecyclerView 使item显示内容在输入框之上
- * 4. 还可以监听最外层布局的onChangeSize 来获取点击软键盘上隐藏软键盘键后的操作
+ * 4. 还可以重写最外层布局的onSizeChanged 来获取点击软键盘上隐藏软键盘键后的操作
  */
 public class MainActivity extends AppCompatActivity {
 
